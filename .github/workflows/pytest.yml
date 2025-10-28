@@ -12,6 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Checkout fixtures repo
+        uses: actions/checkout@v4
+        with:
+          repository: ericsalesdeandrade/pytest-fixtures-examples
+          path: pytest-fixtures-examples
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
